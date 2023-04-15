@@ -29,8 +29,8 @@ class App
     if @people.empty?
       puts 'There are no people in the Library'
     else
-      @people.each_with_index do |person, _i|
-        puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      @people.each_with_index do |person, i|
+        puts "#{i}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
     end
   end
