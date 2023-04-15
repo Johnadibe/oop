@@ -83,7 +83,7 @@ class App
     print 'Author: '
     author = gets.chomp
     book = Book.new(title, author)
-    puts "Book created successfully!"
+    puts 'Book created successfully!'
     @book_list << book unless @book_list.include?(book)
   end
 
