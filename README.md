@@ -96,6 +96,13 @@ To run the project, execute the following command:
 - Twitter: [@JohnAdibe2](https://twitter.com/JohnAdibe2)
 - LinkedIn: [@John Adibe](https://www.linkedin.com/in/john-adibe/)
 
+👤**Chukwuemeka Ochuba**
+
+- GitHub: [@Donmark2k](https://github.com/Donmark2k)
+- Twitter: [@Donmark2k](https://twitter.com/donmark2k)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemeka-ochuba/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
