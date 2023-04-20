@@ -68,7 +68,6 @@ class List
           save_book = JSON.generate(save)
           File.write('./books.json', save_book.to_s)
           puts 'Book created successfully!'
-        # @book_list << book unless @book_list.include?(book)
         end
       end
 
@@ -91,7 +90,6 @@ class List
         save_rental = JSON.generate(save)
         File.write('./rentals.json', save_rental)
         puts 'Rental created successfully!'
-        # @rentals << rental unless @rentals.include?(rental)
       end
 
       def list_all_rentals
@@ -102,5 +100,4 @@ class List
           puts "Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}" if rental.person.id == person_id
         end
       end
-
 end
