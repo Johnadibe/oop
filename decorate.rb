@@ -22,3 +22,6 @@ class TrimmerDecorator < BaseDecorator
     @nameable.correct_name[0, 10] if @nameable.correct_name.length > 10
   end
 end
+
+capitalize = CapitalizeDecorator.new ('chiamanda')
+ puts capitalize

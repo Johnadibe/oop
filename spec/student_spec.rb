@@ -12,11 +12,8 @@ describe Student do
         expect(student.classroom).to eq 'ENG121'
       end
 
-    it 'and age' do
+    it 'show age' do
       expect(student.age).to eq 48
-    end
-
-   
-    
+    end    
   end
 end
