@@ -1,6 +1,5 @@
 require './classroom'
 
-
 describe Classroom do
   context 'create a classroom' do
     classroom = Classroom.new('mob_programming')
