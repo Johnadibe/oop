@@ -1,5 +1,6 @@
-require_relative '../decorate'
-require_relative '../person'
+require './decorate'
+require './person'
+
 
 describe BaseDecorator do
   before :each do
@@ -8,8 +9,8 @@ describe BaseDecorator do
 
   context 'CapitalizeDecorator' do
     it 'capitalize the name' do
-      capitalize_decorator = CapitalizeDecorator.new(@person)
-      expect(capitalize_decorator.correct_name).to eql('Chimamandaadiche')
+      capitalize = CapitalizeDecorator.new(@person)
+      expect(capitalize.correct_name).to eql('Chimamandaadiche')
     end
   end
 
