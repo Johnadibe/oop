@@ -1,5 +1,6 @@
 require './decorate'
 require './person'
+require './nameable'
 
 
 describe BaseDecorator do
@@ -8,16 +9,16 @@ describe BaseDecorator do
   end
 
   context 'CapitalizeDecorator' do
-    it 'capitalize the name' do
+    it 'capitalizes the name' do
       capitalize = CapitalizeDecorator.new(@person)
-      expect(capitalize.correct_name).to eql('Chimamandaadiche')
+      expect(capitalize.correct_name).to eq('Chimamandaadiche')
     end
   end
 
   context 'TrimmerDecorator' do
-    it 'trim name with more than 10 characters' do
+    it 'trims name with more than 10 characters' do
       trimmer = TrimmerDecorator.new(@person)
-      expect(trimmer.correct_name).to eql('chimamanda')
+      expect(trimmer.correct_name).to eq('chimamanda')
       expect(trimmer.correct_name.length).to be <= 10
     end
   end
