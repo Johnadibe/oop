@@ -11,7 +11,6 @@ describe Person do
       expect(person.name).to eq 'Microverse'
     end
 
-
     it 'when the person does not have parent permission' do
       person = Person.new(16, 'James', parent_permission: false)
       expect(person.can_use_services?).to eq(false)
