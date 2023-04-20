@@ -84,6 +84,10 @@ To run the project, execute the following command:
 ```sh
   ruby person.rb
 ```
+### Run tests
+
+-  Type `Rspec`: To run test 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
