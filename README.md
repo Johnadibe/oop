@@ -38,6 +38,8 @@
 
 - **[Library record keeping]**
 - **[Minimalistic UI to access the system]**
+- **[Add unit testing]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
