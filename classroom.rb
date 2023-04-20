@@ -12,3 +12,4 @@ class Classrom
     student.classroom = self
   end
 end
+
