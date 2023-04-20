@@ -1,4 +1,5 @@
 class List
+  ########### LIST ALL BOOKS ############
   def list_all_books
     if @book_list.empty?
       puts 'There is no book in the Library'
@@ -7,6 +8,7 @@ class List
     end
   end
 
+  ########### LIST ALL PEOPLE ############
   def list_all_people
     if @people.empty?
       puts 'There are no people in the Library'
@@ -17,6 +19,7 @@ class List
     end
   end
 
+  ########### CREATE STUDENT ############
   def create_student
     print 'Age: '
     age = gets.chomp.to_i
@@ -37,6 +40,7 @@ class List
     puts 'Student created successfully!'
   end
 
+  ########### CREATE TEACHER ############
   def create_teacher
     print 'Age: '
     age = gets.chomp.to_i
@@ -55,6 +59,7 @@ class List
     puts 'Teacher created successfully!'
   end
 
+  ########### CREATE BOOK ############
   def create_book
     print 'Title: '
     title = gets.chomp
@@ -71,6 +76,7 @@ class List
     end
   end
 
+  ########### CREATE RENTAL ############
   def create_rental
     puts 'Your Library is empty' if @people.empty? && @book_list.empty?
     puts "Select a book from the following list by number:\n"
@@ -92,6 +98,7 @@ class List
     puts 'Rental created successfully!'
   end
 
+  ########### LIST ALL RENTALS ############
   def list_all_rentals
     print 'ID of person: '
     person_id = gets.chomp.to_i
