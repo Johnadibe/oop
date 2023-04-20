@@ -1,35 +1,35 @@
-# require './rental'
-# require './book'
-# require './student'
+require './rental'
+require './book'
+require './student'
 
-# describe Rental do
-#   context 'create a rental' do
-#     book = Book.new 'test_title', 'test_author'
-#     student = Student.new(27, 'test_name', parent_permission: true)
-#     rental = Rental.new(student, book, '01/01/2023')
+describe Rental do
+  context 'create a rental' do
+    book = Book.new 'Purple_Hibiscus', 'Chiamanda'
+    student = Student.new(48,'Chukwuemeka','ENG121',  parent_permission: true)
+    rental = Rental.new('01/04/2023', book, student)
 
-#     it 'check the date' do
-#       rental.date.should eq '01/01/2023'
-#     end
+    it 'check the date' do
+      rental.date.should eq '01/04/2023'
+    end
 
-#     it 'show the title' do
-#       expect(book.title).to eq 'test_title'
-#     end
+    it 'show the title' do
+      expect(book.title).to eq 'Purple_Hibiscus'
+    end
 
-#     it 'show the author' do
-#       expect(book.author).to eq 'test_author'
-#     end
+    it 'show the author' do
+      expect(book.author).to eq 'Chiamanda'
+    end
 
-#     it 'show student name' do
-#       expect(student.name).to eq 'test_name'
-#     end
+    it 'show student name' do
+      expect(student.name).to eq 'Chukwuemeka'
+    end
 
-#     it 'show student age' do
-#       expect(student.age).to eq 27
-#     end
+    it 'show student age' do
+      expect(student.age).to eq 48
+    end
 
-#     it 'show student permission' do
-#       expect(student.parent_permission).to eq true
-#     end
-#   end
-# end
+    it 'show classroom' do
+        expect(student.classroom).to eq 'ENG121'
+      end
+      end
+end
