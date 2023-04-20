@@ -7,7 +7,7 @@ require 'json'
 require './data'
 
 class App < List
-  attr_accessor :book_list, :people 
+  attr_accessor :book_list, :people
 
   def initialize
     super()
@@ -34,9 +34,9 @@ class App < List
     end
   end
 
-   # ======== Load books=======
+  # ======== Load books=======
 
-   def load_books
+  def load_books
     return unless File.exist?('./books.json')
 
     file = File.read('./books.json')
