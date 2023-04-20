@@ -6,7 +6,6 @@ describe BaseDecorator do
   before :each do
     @person = Person.new(27, 'chimamandaadiche')
     @person2 = Person.new(27, 'John')
-
   end
 
   context 'CapitalizeDecorator' do
