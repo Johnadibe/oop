@@ -3,13 +3,11 @@ require_relative 'student'
 require_relative 'teacher'
 require_relative 'rental'
 require_relative 'list'
-
-###############################
 require 'json'
 require './data'
 
 class App < List
-  attr_accessor :book_list, :people ###############################
+  attr_accessor :book_list, :people 
 
   def initialize
     super()

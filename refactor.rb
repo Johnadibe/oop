@@ -1,11 +1,9 @@
 require_relative 'app'
-require 'json' #################
+require 'json'
 
 class Refactor
   def initialize
     @app = App.new
-
-    ################## TESTING
     @app.load_books
     @app.load_people
     @app.load_rentals
