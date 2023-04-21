@@ -5,7 +5,7 @@ require './student'
 describe Rental do
   context 'create a rental' do
     book = Book.new 'Purple_Hibiscus', 'Chiamanda'
-    student = Student.new(48,'Chukwuemeka','ENG121',  parent_permission: true)
+    student = Student.new(48, 'Chukwuemeka', 'ENG121', parent_permission: true)
     rental = Rental.new('01/04/2023', book, student)
 
     it 'check the date' do
@@ -29,7 +29,7 @@ describe Rental do
     end
 
     it 'show classroom' do
-        expect(student.classroom).to eq 'ENG121'
-      end
-      end
+      expect(student.classroom).to eq 'ENG121'
+    end
+  end
 end

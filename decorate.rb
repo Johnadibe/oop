@@ -23,5 +23,5 @@ class TrimmerDecorator < BaseDecorator
   end
 end
 
-capitalize = CapitalizeDecorator.new ('chiamanda')
- puts capitalize
+capitalize = CapitalizeDecorator.new('chiamanda')
+puts capitalize
