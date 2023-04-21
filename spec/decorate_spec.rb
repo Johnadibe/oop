@@ -8,16 +8,16 @@ describe BaseDecorator do
 
   context 'CapitalizeDecorator' do
     it 'capitalize the name' do
-      capitalizeDecorator = CapitalizeDecorator.new(@person)
-      expect(capitalizeDecorator.correct_name).to eql('Chimamandaadiche')
+      capitalize_decorator = CapitalizeDecorator.new(@person)
+      expect(capitalize_decorator.correct_name).to eql('Chimamandaadiche')
     end
   end
 
   context 'TrimmerDecorator' do
     it 'trim name with more than 10 characters' do
-      trimmerDecorator = TrimmerDecorator.new(@person)
-      expect(trimmerDecorator.correct_name).to eql('chimamanda')
-      expect(trimmerDecorator.correct_name.length).to be <= 10
+      trimmer = TrimmerDecorator.new(@person)
+      expect(trimmer.correct_name).to eql('chimamanda')
+      expect(trimmer.correct_name.length).to be <= 10
     end
   end
 end
